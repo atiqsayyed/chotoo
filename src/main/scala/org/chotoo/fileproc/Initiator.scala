@@ -8,7 +8,7 @@ import scalax.file.Path
 import Path._
 import scalax.file.PathSet
 import scalax.file.PathMatcher._
-
+import org.chotoo.util.CSV
 /**
  * Actual file processing happens here
  *
@@ -24,6 +24,8 @@ class Initiator(pathToDir: String, searchString: String) {
     //check if the given file or path is valid or not.
     path ** "*.txt" foreach (processFile)
   }
+
+ 
 
   /**
    * Start processing the file
